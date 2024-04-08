@@ -1,4 +1,4 @@
-package easy._150;
+package interview_150.easy;
 
 /*
 You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n,

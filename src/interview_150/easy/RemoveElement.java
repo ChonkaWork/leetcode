@@ -1,4 +1,4 @@
-package easy._150;
+package interview_150.easy;
 
 import java.util.Arrays;
 
@@ -47,18 +47,11 @@ It does not matter what you leave beyond the returned k (hence they are undersco
  */
 public class RemoveElement {
 
-    public static void main(String[] args) {
-        int[] nums = {3, 2, 2, 3};
-        int val = 3;
-        System.out.println(removeElement(nums, val));
-        System.out.println(Arrays.toString(nums));
-    }
-
-    public static int removeElement(int[] nums, int val) {
+    public int removeElement(int[] nums, int val) {
         int length = nums.length;
         int idx = 0;
         for (int i = 0; i < length; i++) {
-            if (val != nums[i]){
+            if (val != nums[i]) {
                 nums[idx++] = nums[i];
             }
         }
