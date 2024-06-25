@@ -1,7 +1,5 @@
 package easy;
 
-import java.util.Arrays;
-
 /*
 1929. Concatenation of Array
 Given an integer array nums of length n, you want to create an array
@@ -30,12 +28,12 @@ public class ConcatenationOfArray {
 
     public int[] getConcatenation(int[] nums) {
         int length = nums.length;
-        var ans  = new int[length + length];
+        var ans = new int[length + length];
 
-        for (int i = 0 ; i < length; i++) {
+        for (int i = 0; i < length; i++) {
             int current = nums[i];
             ans[i] = current;
-            ans[i+length] = current;
+            ans[i + length] = current;
         }
         return ans;
     }
